@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_register.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body class="RegisterBody">
+  <div class="register-container">
+    <div class="register-header">
+        <h1 id="LoginTitle">Welcome to GlowHave</h1>
+      <h2>Create Account</h2>
+      <p>Join us and experience greatness.</p>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Your name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@mail.com" />
+      </div>
+      <div class="form-group">
+        <label for="password">Create Password</label>
+        <input type="password" id="password" placeholder="********" />
+        
+      </div>
+      <button type="submit" class="register-btn">Register</button>
+      <div class="signup-link">
+            <p>Already have an account? <a href="login.html" onclick="showAlert('Redirecting to sign up page...')">Login Here</a></p>
+        </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  background-color: #2E2E2E;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+nav .logo {
+  flex: 1;
+  font-size: 2em;
+  color: white;
+  font-family: "Righteous", sans-serif;
+}
+
+nav .nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav .nav-links li a {
+  color:#FFE87C ;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+  color: #d4af37;
+}
+
+.content {
+  margin-top: 120px;
+  padding: 40px;
+  color: white;
+}
+
+#Join {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, #4CAF50, #2E7D32);
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-left: 1.2rem;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#Join:hover {
+  background: linear-gradient(to right, #66FFB2, #4CAF50);
+  transform: scale(1.05);
+}
+
+.logo{
+    background: linear-gradient(90deg, #FFF8DC, #FFE87C);   
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Righteous",sans-serif;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #FFE87C;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  nav .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background: #2E2E2E;
+    width: 200px;
+    padding: 20px;
+    display: none; 
+  }
+
+  nav .nav-links.active {
+    display: flex; 
+  }
+
+  .hamburger {
+    display: flex; 
+  }
+}
